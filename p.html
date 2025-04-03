@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apache2 Debian Kelompok 8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            padding: 3px;
+            background-color: #D8DBE2;
+            font-family: Verdana, sans-serif;
+            font-size: 11pt;
+            text-align: center;
+            transition: opacity ease-in 0.2s;
+        }
+
+        body[unresolved] {
+            opacity: 0;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .main_page {
+            width: 800px;
+            margin: 0 auto 3px;
+            border: 2px solid #212738;
+            background-color: #FFFFFF;
+            text-align: center;
+        }
+
+        .page_header {
+            height: 99px;
+            width: 100%;
+            background-color: #F5F6F7;
+            display: flex;
+            align-items: center;
+        }
+
+        .page_header span {
+            margin: 15px 0 0 50px;
+            font-size: 180%;
+            font-weight: bold;
+        }
+
+        .page_header img {
+            margin: 3px 0 0 40px;
+            border: 0;
+        }
+
+        .content_section {
+            margin: 3px;
+            background-color: #FFFFFF;
+            text-align: left;
+        }
+
+        .content_section_text {
+            padding: 10px;
+            text-align: left;
+            color: #000000;
+            font-size: 100%;
+        }
+
+        .content_section_text pre {
+            margin: 8px 0;
+            padding: 8px;
+            border: 1px dotted #000000;
+            background-color: #F5F6F7;
+            font-style: italic;
+        }
+
+        .content_section_text p {
+            margin-bottom: 6px;
+        }
+
+        .content_section_text ol, 
+        .content_section_text li {
+            padding: 4px 8px 4px 16px;
+        }
+
+        .content_section_profil {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .profil_item {
+            text-align: center;
+        }
+        
+        .profil_item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #212738;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .profil_item p {
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .section_header {
+            padding: 3px 6px;
+            background-color: #8E9CB2;
+            color: #FFFFFF;
+            font-weight: bold;
+            font-size: 112%;
+            text-align: center;
+        }
+
+        .section_header_red {
+            background-color: #CD214F;
+        }
+
+        .section_header_grey {
+            background-color: #9F9386;
+        }
+
+        .floating_element {
+            position: relative;
+            float: left;
+        }
+
+        .validator {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_page">
+        <div class="page_header floating_element">
+            <img src="/icons/openlogo-75.png" alt="Debian Logo" class="floating_element">
+            <span class="floating_element">
+                Apache2 Debian Kelompok 8
+            </span>
+        </div>
+
+        <div class="content_section floating_element">
+            <div class="section_header section_header_red">
+                <div id="about"></div>
+                It works!
+            </div>
+            <div class="content_section_text">
+                <p>
+                    This is the default welcome page used to test the correct 
+                    operation of the Apache2 server after installation on Debian systems.
+                    If you can read this page, it means that the Apache HTTP server installed at
+                    this site is working properly. You should <b>replace this file</b> (located at
+                    <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
+                </p>
+
+                <p>
+                    If you are a normal user of this web site and don't know what this page is
+                    about, this probably means that the site is currently unavailable due to
+                    maintenance.
+                    If the problem persists, please contact the site's administrator.
+                </p>
+            </div>
+
+            <div class="section_header">
+                <div id="changes"></div>
+                Anggota Kelompok 8
+            </div>
+            <div class="content_section_profil">
+                <div class="profil_item">
+                    <img src="https://github.com/Abdurrokhman02/abdurrokhman02.github.io/blob/main/ariella.jpg?raw=true" alt="Abdurrokhman">
+                    <p>Ariella Chandra Naya (2310631170006)</p>
+                </div>
+                <div class="profil_item">
+                    <img src="https://github.com/Abdurrokhman02/about-me/blob/main/img/profil.jpg?raw=true" alt="Abdurrokhman">
+                    <p>Abdurrokhman (2310631170060)</p>
+                </div>
+                <div class="profil_item">
+                    <img src="https://github.com/Abdurrokhman02/abdurrokhman02.github.io/blob/main/jona.jpg?raw=true" alt="Abdurrokhman">
+                    <p>Jonathan Aditya Saputra (2310631170138)</p>
+                </div>           
+            </div>
+
+            <div class="section_header">
+                <div id="docroot"></div>
+                ALHAMDULILLAH
+            </div>
+
+            <div class="content_section_text">
+                <img src="http://192.168.0.109/9pk0af.jpg" title="rasa syukur">
+            </div>
+
+            <div class="section_header section_header_red">
+                <div id="bugs"></div>
+                TERIMAKASIH
+            </div>
+        </div>
+    </div>
+    <div class="validator"></div>
+</body>
+</html>
